@@ -46,5 +46,4 @@ form_busqueda.addEventListener("submit", (event) => {
 
   form_busqueda.reset();
   mostrar_lista_notas(notas_encontradas,div_busqueda);
-  // div_busqueda.innerHTML = `<p>${buscar.value}</p>`;
 });

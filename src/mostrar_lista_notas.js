@@ -4,7 +4,6 @@ function mostrar_lista_notas(notas, div_notas) {
 
     if (notas.length > 0) {
         notas.forEach((item) => {
-            // console.log(item);
             const itemNota = document.createElement('div');
             itemNota.classList.add("item-nota");
             itemNota.innerHTML = `
