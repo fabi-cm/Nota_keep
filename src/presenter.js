@@ -23,6 +23,7 @@ form.addEventListener("submit", (event) => {
     id: Date.now(),
     titulo:titulo.value,
     descripcion: descripcion.value,
+    fecha : new Date().toLocaleString(),
   }
   notas = [...notas,objNota];
   form.reset();

@@ -1,15 +1,16 @@
 function mostrar_lista_notas(notas, div_notas) {
-
+    notasRevers = notas.reverse();
     div_notas.innerHTML = '';
 
-    if (notas.length > 0) {
-        notas.forEach((item) => {
+    if (notasRevers.length > 0) {
+        notasRevers.forEach((item) => {
             const itemNota = document.createElement('div');
             itemNota.classList.add("item-nota");
             itemNota.innerHTML = `
             <table>
                 <tr>
                     <td><strong>${item.titulo}:</strong><br>${item.descripcion}</td>
+                    <td>${item.fecha}</td>
                     <td>
                     <div class="botones">
                         <button class="eliminar" data-id="${item.id}">Eliminar</button>
